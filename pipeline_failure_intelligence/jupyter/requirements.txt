@@ -1,0 +1,8 @@
+langchain
+langchain-community
+langchain-oracledb
+langchain-ollama
+langchain-openai
+langgraph
+oracledb
+ollama
