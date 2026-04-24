@@ -26,7 +26,7 @@ services:
       - DB_USER=system
       - DB_PASSWORD=Welcome1
       - OLLAMA_BASE_URL=http://host.docker.internal:11434
-      - OLLAMA_MODEL=qwen2.5
+      - OLLAMA_MODEL=qwen2.5:7b
       - EMBEDDING_MODEL=nomic-embed-text
     depends_on:
       - oracle-db

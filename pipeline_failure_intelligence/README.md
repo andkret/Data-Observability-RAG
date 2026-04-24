@@ -42,12 +42,12 @@ Install and start [Docker Desktop](https://www.docker.com/products/docker-deskto
 Install [Ollama](https://ollama.com/) and pull both models before starting:
 
 ```bash
-ollama pull mistral          # LLM for agent reasoning (or: ollama pull qwen2.5)
+ollama pull qwen2.5:7b       # LLM for agent reasoning
 ollama pull nomic-embed-text # Dedicated embedding model for vector search
 ```
 
 > **Why a separate embedding model?**
-> Chat models like `mistral` are trained to generate coherent text, not to produce
+> Chat models like `qwen2.5:7b` are trained to generate coherent text, not to produce
 > semantically precise vector representations. When used for embeddings, two log messages
 > that mean the same thing may land far apart in the vector space, producing poor
 > similarity search results. `nomic-embed-text` is a purpose-built embedding model
